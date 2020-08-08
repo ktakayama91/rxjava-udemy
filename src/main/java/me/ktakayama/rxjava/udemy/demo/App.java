@@ -1,16 +1,30 @@
 package me.ktakayama.rxjava.udemy.demo;
 
+import lombok.extern.slf4j.Slf4j;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingCreate;
+import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingDefer;
+import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingInterval;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingJust;
 
+@Slf4j
 public class App 
 {
     public static void main( String[] args )
     {
-        ObservableUsingJust observableUsingJust = new ObservableUsingJust();
-        observableUsingJust.getLetters();
+//        log.info("Starting Observable using Just");
+//        ObservableUsingJust observableUsingJust = new ObservableUsingJust();
+//        observableUsingJust.getLetters();
+//
+//        log.info("Starting Observable using Create");
+//        ObservableUsingCreate observableUsingCreate = new ObservableUsingCreate();
+//        observableUsingCreate.create();
+//
+//        log.info("Starting Observable using Defer");
+//        ObservableUsingDefer observableUsingDefer = new ObservableUsingDefer();
+//        observableUsingDefer.run();
 
-        ObservableUsingCreate observableUsingCreate = new ObservableUsingCreate();
-        observableUsingCreate.create();
+        log.info("Starting Observable using Interval");
+        ObservableUsingInterval observableUsingInterval = new ObservableUsingInterval();
+        observableUsingInterval.run();
     }
 }

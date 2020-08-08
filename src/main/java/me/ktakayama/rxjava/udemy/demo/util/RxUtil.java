@@ -5,7 +5,7 @@ import java.util.List;
 
 import me.ktakayama.rxjava.udemy.demo.model.Person;
 
-public class PersonUtil {
+public class RxUtil {
 
     public static List<Person> getPersons() {
         Person person1 = Person.builder()
@@ -24,5 +24,13 @@ public class PersonUtil {
                 .build();
 
         return Arrays.asList(person1, person2, person3);
+    }
+
+    public static void sleep(long time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

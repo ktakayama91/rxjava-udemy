@@ -6,16 +6,14 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.annotations.NonNull;
-import lombok.extern.slf4j.Slf4j;
 import me.ktakayama.rxjava.udemy.demo.Observer.ObserverDemo;
 import me.ktakayama.rxjava.udemy.demo.model.Person;
-import me.ktakayama.rxjava.udemy.demo.util.PersonUtil;
+import me.ktakayama.rxjava.udemy.demo.util.RxUtil;
 
-@Slf4j
 public class ObservableUsingCreate {
 
     public void create() {
-        List<Person> persons = PersonUtil.getPersons();
+        List<Person> persons = RxUtil.getPersons();
 
         Observable.create(new ObservableOnSubscribe<Object>() {
             @Override
@@ -29,6 +27,4 @@ public class ObservableUsingCreate {
             }
         }).subscribe(new ObserverDemo());
     }
-
-
 }
