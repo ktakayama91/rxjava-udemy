@@ -18,7 +18,7 @@ public class ObserverDemo implements Observer {
 
     @Override
     public void onNext(@NonNull Object o) {
-        LOGGER.info("On Next {}", o);
+        LOGGER.info("On Next -> {}", o);
     }
 
     @Override

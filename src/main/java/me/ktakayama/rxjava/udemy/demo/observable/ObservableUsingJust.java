@@ -1,4 +1,4 @@
-package me.ktakayama.rxjava.udemy.demo.observables;
+package me.ktakayama.rxjava.udemy.demo.observable;
 
 import io.reactivex.Observable;
 import me.ktakayama.rxjava.udemy.demo.Observer.ObserverDemo;
