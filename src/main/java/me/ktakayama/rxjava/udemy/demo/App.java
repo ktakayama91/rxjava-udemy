@@ -9,6 +9,8 @@ import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingJust;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingRange;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingTimer;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.BufferOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.filtering.GroupByOperator;
+import me.ktakayama.rxjava.udemy.demo.util.RxUtil;
 
 @Slf4j
 public class App 
@@ -43,8 +45,14 @@ public class App
 //        ObservableUsingFromCallable observableUsingFromCallable = new ObservableUsingFromCallable();
 //        observableUsingFromCallable.run();
 
-        log.info("Starting Buffer Operator");
-        BufferOperator bufferOperator = new BufferOperator();
-        bufferOperator.run();
+//        log.info("Starting Buffer Operator");
+//        BufferOperator bufferOperator = new BufferOperator();
+//        bufferOperator.run();
+
+        log.info("Starting Group by Operator");
+        GroupByOperator groupByOperator = new GroupByOperator();
+        groupByOperator.run();
+        RxUtil.sleep(10000);
+
     }
 }
