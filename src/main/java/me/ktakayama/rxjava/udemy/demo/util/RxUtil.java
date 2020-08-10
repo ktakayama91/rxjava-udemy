@@ -1,5 +1,6 @@
 package me.ktakayama.rxjava.udemy.demo.util;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,6 +25,14 @@ public class RxUtil {
                 .build();
 
         return Arrays.asList(person1, person2, person3);
+    }
+
+    public static List<Integer> getIntegers(int limit) {
+        List<Integer> integers = new ArrayList<>();
+        for (int i=0; i < limit; i++) {
+            integers.add(i);
+        }
+        return integers;
     }
 
     public static void sleep(long time) {
