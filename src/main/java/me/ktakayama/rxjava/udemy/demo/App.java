@@ -5,6 +5,7 @@ import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingCreate;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingDefer;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingInterval;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingJust;
+import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingRange;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingTimer;
 
 @Slf4j
@@ -28,8 +29,12 @@ public class App
 //        ObservableUsingInterval observableUsingInterval = new ObservableUsingInterval();
 //        observableUsingInterval.run();
 
-        log.info("Starting Observable using Timer");
-        ObservableUsingTimer observableUsingTimer = new ObservableUsingTimer();
-        observableUsingTimer.run();
+//        log.info("Starting Observable using Timer");
+//        ObservableUsingTimer observableUsingTimer = new ObservableUsingTimer();
+//        observableUsingTimer.run();
+
+        log.info("Starting Observable using Range");
+        ObservableUsingRange observableUsingRange = new ObservableUsingRange();
+        observableUsingRange.run();
     }
 }
