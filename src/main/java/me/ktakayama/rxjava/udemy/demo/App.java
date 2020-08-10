@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.FlatMapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.transforming.ScanOperator;
 import me.ktakayama.rxjava.udemy.demo.util.RxUtil;
 
 @Slf4j
@@ -52,8 +53,12 @@ public class App
 //        MapOperator mapOperator = new MapOperator();
 //        mapOperator.run();
 
-        log.info("Starting Flat Map Operator");
-        FlatMapOperator flatMapOperator = new FlatMapOperator();
-        flatMapOperator.run();
+//        log.info("Starting Flat Map Operator");
+//        FlatMapOperator flatMapOperator = new FlatMapOperator();
+//        flatMapOperator.run();
+
+        log.info("Starting Scan Operator");
+        ScanOperator scanOperator = new ScanOperator();
+        scanOperator.run();
     }
 }
