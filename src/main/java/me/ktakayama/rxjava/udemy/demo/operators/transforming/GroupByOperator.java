@@ -1,4 +1,4 @@
-package me.ktakayama.rxjava.udemy.demo.operators.filtering;
+package me.ktakayama.rxjava.udemy.demo.operators.transforming;
 
 import io.reactivex.Observable;
 import io.reactivex.annotations.NonNull;

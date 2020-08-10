@@ -1,15 +1,9 @@
 package me.ktakayama.rxjava.udemy.demo;
 
 import lombok.extern.slf4j.Slf4j;
-import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingCreate;
-import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingDefer;
-import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingFromCallable;
-import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingInterval;
-import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingJust;
-import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingRange;
-import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingTimer;
-import me.ktakayama.rxjava.udemy.demo.operators.filtering.BufferOperator;
-import me.ktakayama.rxjava.udemy.demo.operators.filtering.GroupByOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.transforming.FlatMapOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
 import me.ktakayama.rxjava.udemy.demo.util.RxUtil;
 
 @Slf4j
@@ -49,10 +43,17 @@ public class App
 //        BufferOperator bufferOperator = new BufferOperator();
 //        bufferOperator.run();
 
-        log.info("Starting Group by Operator");
-        GroupByOperator groupByOperator = new GroupByOperator();
-        groupByOperator.run();
-        RxUtil.sleep(10000);
+//        log.info("Starting Group by Operator");
+//        GroupByOperator groupByOperator = new GroupByOperator();
+//        groupByOperator.run();
+//        RxUtil.sleep(10000);
 
+//        log.info("Starting Map Operator");
+//        MapOperator mapOperator = new MapOperator();
+//        mapOperator.run();
+
+        log.info("Starting Flat Map Operator");
+        FlatMapOperator flatMapOperator = new FlatMapOperator();
+        flatMapOperator.run();
     }
 }
