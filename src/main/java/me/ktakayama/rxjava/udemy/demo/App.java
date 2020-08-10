@@ -3,6 +3,7 @@ package me.ktakayama.rxjava.udemy.demo;
 import lombok.extern.slf4j.Slf4j;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingCreate;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingDefer;
+import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingFromCallable;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingInterval;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingJust;
 import me.ktakayama.rxjava.udemy.demo.observable.ObservableUsingRange;
@@ -33,8 +34,12 @@ public class App
 //        ObservableUsingTimer observableUsingTimer = new ObservableUsingTimer();
 //        observableUsingTimer.run();
 
-        log.info("Starting Observable using Range");
-        ObservableUsingRange observableUsingRange = new ObservableUsingRange();
-        observableUsingRange.run();
+//        log.info("Starting Observable using Range");
+//        ObservableUsingRange observableUsingRange = new ObservableUsingRange();
+//        observableUsingRange.run();
+
+        log.info("Starting Observable using from Callable");
+        ObservableUsingFromCallable observableUsingFromCallable = new ObservableUsingFromCallable();
+        observableUsingFromCallable.run();
     }
 }
