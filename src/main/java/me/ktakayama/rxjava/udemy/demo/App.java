@@ -1,6 +1,7 @@
 package me.ktakayama.rxjava.udemy.demo;
 
 import lombok.extern.slf4j.Slf4j;
+import me.ktakayama.rxjava.udemy.demo.operators.filtering.DebounceOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.FlatMapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
@@ -57,8 +58,12 @@ public class App
 //        FlatMapOperator flatMapOperator = new FlatMapOperator();
 //        flatMapOperator.run();
 
-        log.info("Starting Scan Operator");
-        ScanOperator scanOperator = new ScanOperator();
-        scanOperator.run();
+//        log.info("Starting Scan Operator");
+//        ScanOperator scanOperator = new ScanOperator();
+//        scanOperator.run();
+
+        log.info("Starting Debounce Operator");
+        DebounceOperator debounceOperator = new DebounceOperator();
+        debounceOperator.run();
     }
 }
