@@ -1,6 +1,7 @@
 package me.ktakayama.rxjava.udemy.demo;
 
 import lombok.extern.slf4j.Slf4j;
+import me.ktakayama.rxjava.udemy.demo.observable.SingleObservable;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.DebounceOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.FlatMapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
@@ -65,5 +66,10 @@ public class App
         log.info("Starting Debounce Operator");
         DebounceOperator debounceOperator = new DebounceOperator();
         debounceOperator.run();
+
+//        log.info("Starting Single Observable");
+//        SingleObservable singleObservable = new SingleObservable();
+//        singleObservable.run();
+
     }
 }
