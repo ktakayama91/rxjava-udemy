@@ -6,6 +6,8 @@ import me.ktakayama.rxjava.udemy.demo.operators.filtering.DebounceOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.DistinctOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.ElementAtOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.IgnoreElementOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.filtering.SkipLastOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.filtering.SkipOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.FlatMapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
@@ -82,9 +84,17 @@ public class App
 //        ElementAtOperator elementAtOperator = new ElementAtOperator();
 //        elementAtOperator.run();
 
-        log.info("Starting Ignore Element Operator");
-        IgnoreElementOperator ignoreElementOperator = new IgnoreElementOperator();
-        ignoreElementOperator.run();
+//        log.info("Starting Ignore Element Operator");
+//        IgnoreElementOperator ignoreElementOperator = new IgnoreElementOperator();
+//        ignoreElementOperator.run();
+
+        log.info("Starting Skip Operator");
+        SkipOperator skipOperator = new SkipOperator();
+        skipOperator.run();
+
+        log.info("Starting Skip Operator");
+        SkipLastOperator skipLastOperator = new SkipLastOperator();
+        skipLastOperator.run();
 
     }
 }
