@@ -3,6 +3,7 @@ package me.ktakayama.rxjava.udemy.demo;
 import lombok.extern.slf4j.Slf4j;
 import me.ktakayama.rxjava.udemy.demo.observable.SingleObservable;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.DebounceOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.filtering.DistinctOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.FlatMapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
@@ -63,13 +64,17 @@ public class App
 //        ScanOperator scanOperator = new ScanOperator();
 //        scanOperator.run();
 
-        log.info("Starting Debounce Operator");
-        DebounceOperator debounceOperator = new DebounceOperator();
-        debounceOperator.run();
+//        log.info("Starting Debounce Operator");
+//        DebounceOperator debounceOperator = new DebounceOperator();
+//        debounceOperator.run();
 
 //        log.info("Starting Single Observable");
 //        SingleObservable singleObservable = new SingleObservable();
 //        singleObservable.run();
+
+        log.info("Starting Distinct Operator");
+        DistinctOperator distinctOperator = new DistinctOperator();
+        distinctOperator.run();
 
     }
 }
