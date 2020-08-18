@@ -5,6 +5,7 @@ import me.ktakayama.rxjava.udemy.demo.observable.SingleObservable;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.DebounceOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.DistinctOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.ElementAtOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.filtering.FilterOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.IgnoreElementOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.SkipLastOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.SkipOperator;
@@ -98,13 +99,17 @@ public class App
 //        SkipLastOperator skipLastOperator = new SkipLastOperator();
 //        skipLastOperator.run();
 
-        log.info("Starting Take Operator");
-        TakeOperator takeOperator = new TakeOperator();
-        takeOperator.run();
+//        log.info("Starting Take Operator");
+//        TakeOperator takeOperator = new TakeOperator();
+//        takeOperator.run();
 
-        log.info("Starting TakeLast Operator");
-        TakeLastOperator takeLastOperator = new TakeLastOperator();
-        takeLastOperator.run();
+//        log.info("Starting TakeLast Operator");
+//        TakeLastOperator takeLastOperator = new TakeLastOperator();
+//        takeLastOperator.run();
+
+        log.info("Starting Filter Operator");
+        FilterOperator filterOperator = new FilterOperator();
+        filterOperator.run();
 
     }
 }
