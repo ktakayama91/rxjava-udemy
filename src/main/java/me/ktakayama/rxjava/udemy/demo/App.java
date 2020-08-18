@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import me.ktakayama.rxjava.udemy.demo.observable.SingleObservable;
 import me.ktakayama.rxjava.udemy.demo.operators.combining.CombineLastOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.combining.MergeOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.combining.ZipOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.DebounceOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.DistinctOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.filtering.ElementAtOperator;
@@ -117,9 +118,13 @@ public class App
 //        CombineLastOperator combineLastOperator = new CombineLastOperator();
 //        combineLastOperator.run();
 
-        log.info("Starting Merge Operator");
-        MergeOperator mergeOperator = new MergeOperator();
-        mergeOperator.run();
+//        log.info("Starting Merge Operator");
+//        MergeOperator mergeOperator = new MergeOperator();
+//        mergeOperator.run();
+
+        log.info("Starting Zip Operator");
+        ZipOperator zipOperator = new ZipOperator();
+        zipOperator.run();
 
     }
 }
