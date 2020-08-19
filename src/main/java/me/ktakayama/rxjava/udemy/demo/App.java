@@ -20,6 +20,8 @@ import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.ScanOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.DelayOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.DoOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.utility.TimeoutOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.utility.TimestampOperator;
 import me.ktakayama.rxjava.udemy.demo.util.RxUtil;
 
 @Slf4j
@@ -132,9 +134,17 @@ public class App
 //        DelayOperator delayOperator = new DelayOperator();
 //        delayOperator.run();
 
-        log.info("Starting Do Operator");
-        DoOperator doOperator = new DoOperator();
-        doOperator.run();
+//        log.info("Starting Do Operator");
+//        DoOperator doOperator = new DoOperator();
+//        doOperator.run();
+
+//        log.info("Starting Timestamp Operator");
+//        TimestampOperator timestampOperator = new TimestampOperator();
+//        timestampOperator.run();
+
+        log.info("Starting Timeout Operator");
+        TimeoutOperator timeoutOperator = new TimeoutOperator();
+        timeoutOperator.run();
 
     }
 }
