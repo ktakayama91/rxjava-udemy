@@ -18,6 +18,7 @@ import me.ktakayama.rxjava.udemy.demo.operators.transforming.FlatMapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.ScanOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.utility.AllOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.DelayOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.DoOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.TimeoutOperator;
@@ -142,9 +143,13 @@ public class App
 //        TimestampOperator timestampOperator = new TimestampOperator();
 //        timestampOperator.run();
 
-        log.info("Starting Timeout Operator");
-        TimeoutOperator timeoutOperator = new TimeoutOperator();
-        timeoutOperator.run();
+//        log.info("Starting Timeout Operator");
+//        TimeoutOperator timeoutOperator = new TimeoutOperator();
+//        timeoutOperator.run();
+
+        log.info("Starting All Operator");
+        AllOperator allOperator = new AllOperator();
+        allOperator.run();
 
     }
 }
