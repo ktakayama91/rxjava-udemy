@@ -19,6 +19,7 @@ import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.ScanOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.DelayOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.utility.DoOperator;
 import me.ktakayama.rxjava.udemy.demo.util.RxUtil;
 
 @Slf4j
@@ -127,9 +128,13 @@ public class App
 //        ZipOperator zipOperator = new ZipOperator();
 //        zipOperator.run();
 
-        log.info("Starting Delay Operator");
-        DelayOperator delayOperator = new DelayOperator();
-        delayOperator.run();
+//        log.info("Starting Delay Operator");
+//        DelayOperator delayOperator = new DelayOperator();
+//        delayOperator.run();
+
+        log.info("Starting Do Operator");
+        DoOperator doOperator = new DoOperator();
+        doOperator.run();
 
     }
 }
