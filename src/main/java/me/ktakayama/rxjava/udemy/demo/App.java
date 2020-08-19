@@ -18,6 +18,7 @@ import me.ktakayama.rxjava.udemy.demo.operators.transforming.FlatMapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.ScanOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.utility.DelayOperator;
 import me.ktakayama.rxjava.udemy.demo.util.RxUtil;
 
 @Slf4j
@@ -122,9 +123,13 @@ public class App
 //        MergeOperator mergeOperator = new MergeOperator();
 //        mergeOperator.run();
 
-        log.info("Starting Zip Operator");
-        ZipOperator zipOperator = new ZipOperator();
-        zipOperator.run();
+//        log.info("Starting Zip Operator");
+//        ZipOperator zipOperator = new ZipOperator();
+//        zipOperator.run();
+
+        log.info("Starting Delay Operator");
+        DelayOperator delayOperator = new DelayOperator();
+        delayOperator.run();
 
     }
 }
