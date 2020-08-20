@@ -19,6 +19,7 @@ import me.ktakayama.rxjava.udemy.demo.operators.transforming.GroupByOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.MapOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.transforming.ScanOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.AllOperator;
+import me.ktakayama.rxjava.udemy.demo.operators.utility.ContainsOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.DelayOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.DoOperator;
 import me.ktakayama.rxjava.udemy.demo.operators.utility.TimeoutOperator;
@@ -147,9 +148,13 @@ public class App
 //        TimeoutOperator timeoutOperator = new TimeoutOperator();
 //        timeoutOperator.run();
 
-        log.info("Starting All Operator");
-        AllOperator allOperator = new AllOperator();
-        allOperator.run();
+//        log.info("Starting All Operator");
+//        AllOperator allOperator = new AllOperator();
+//        allOperator.run();
+
+        log.info("Starting Contains Operator");
+        ContainsOperator containsOperator = new ContainsOperator();
+        containsOperator.run();
 
     }
 }
